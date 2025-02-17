@@ -1,0 +1,35 @@
+DROP TABLE IF EXISTS `User Banking Details`;
+
+CREATE TABLE `User Banking Details` (
+  BankingDetailID INT AUTO_INCREMENT,
+  UserID INT,
+  BankName VARCHAR(100) NOT NULL,
+  AccountNumber VARCHAR(20) NOT NULL,
+  AccountHolderName VARCHAR(100) NOT NULL,
+  IBAN VARCHAR(34),
+  SWIFTCode VARCHAR(11),
+  PRIMARY KEY (BankingDetailID)
+);
+
+INSERT INTO `User Banking Details` (UserID, BankName, AccountNumber, AccountHolderName, IBAN, SWIFTCode) VALUES
+  (1, 'Bank of America', '1234567890', 'John Doe', 'US64SVBKUS6S3300958879', 'BOFAUS3N'),
+  (2, 'Chase Bank', '0987654321', 'Jane Smith', 'US64SVBKUS6S3300958878', 'CHASUS33'),
+  (3, 'Wells Fargo', '1234509876', 'Mike Jones', 'US64SVBKUS6S3300958877', 'WFBIUS6S'),
+  (4, 'Citibank', '6789054321', 'Susan Lee', 'US64SVBKUS6S3300958876', 'CITIUS33'),
+  (5, 'HSBC', '5678901234', 'Chris Brown', 'US64SVBKUS6S3300958875', 'HSBCUS33'),
+  (6, 'TD Bank', '3456789012', 'Emily Davis', 'US64SVBKUS6S3300958874', 'NRTHUS33'),
+  (7, 'PNC Bank', '2345678901', 'Paul Walker', 'US64SVBKUS6S3300958873', 'PNCCUS33'),
+  (8, 'Capital One', '7890123456', 'Olivia Taylor', 'US64SVBKUS6S3300958872', 'NFBKUS33'),
+  (9, 'SunTrust', '8901234567', 'Jason Clark', 'US64SVBKUS6S3300958871', 'SNTRUS3A'),
+  (10, 'Ally Bank', '9012345678', 'Sarah Miller', 'US64SVBKUS6S3300958870', 'ALLYUS33'),
+  (11, 'Regions Bank', '0123456789', 'Anna Harris', 'US64SVBKUS6S3300958869', 'UAFSUS33'),
+  (12, 'BB&T', '2109876543', 'David Wilson', 'US64SVBKUS6S3300958868', 'BRBTUS33'),
+  (13, 'US Bank', '3210987654', 'Steven Robinson', 'US64SVBKUS6S3300958867', 'USBKUS44'),
+  (14, 'KeyBank', '4321098765', 'Linda Martin', 'US64SVBKUS6S3300958866', 'KEYBUS33'),
+  (15, 'Fifth Third Bank', '5432109876', 'Kevin Thomas', 'US64SVBKUS6S3300958865', 'FTBCUS3C'),
+  (16, 'BBVA Compass', '6543210987', 'Laura Moore', 'US64SVBKUS6S3300958864', 'BBVAUS33'),
+  (17, 'Santander Bank', '7654321098', 'Mark Jackson', 'US64SVBKUS6S3300958863', 'SVRNUS33'),
+  (18, 'M&T Bank', '8765432109', 'Nancy Taylor', 'US64SVBKUS6S3300958862', 'MANTUS33'),
+  (19, 'Citizens Bank', '9876543210', 'Scott White', 'US64SVBKUS6S3300958861', 'CTZIUS33'),
+  (20, 'Synovus Bank', '0987654321', 'Barbara Hall', 'US64SVBKUS6S3300958860', 'SNVSUS44'),
+  (21, 'First Republic Bank', '1234567890', 'Peter King', 'US64SVBKUS6S3300958859', 'FRBBUS6X');
