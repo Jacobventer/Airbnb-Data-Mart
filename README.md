@@ -1,2 +1,4 @@
 # Airbnb-Data-Mart
-Data Base forr an Airbnb-like platform
+Data Base for an Airbnb-like platform
+ERM diagram
+SQL files to create tables
