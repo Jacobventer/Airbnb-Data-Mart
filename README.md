@@ -35,7 +35,7 @@ The design began with an Entity-Relationship Model (ERM) consisting of over **20
 
 ## Database Schema
 
-## Example Table: `Amenities`
+# Example Table: `Amenities`
 
 ```sql
 CREATE TABLE Amenities (
@@ -56,7 +56,10 @@ VALUES
 (3, 6, 3, 3, 2, 0, 2),
 ...
 (21, 2, 1, 1, 1, 0, 1);
+```
 
+# Example Table: `Attribute`
+```sql
 CREATE TABLE Attribute (
   AttributeID INT AUTO_INCREMENT PRIMARY KEY,
   CategoryID INT,
