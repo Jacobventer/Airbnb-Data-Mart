@@ -57,3 +57,16 @@ VALUES
 ...
 (21, 2, 1, 1, 1, 0, 1);
 
+CREATE TABLE Attribute (
+  AttributeID INT AUTO_INCREMENT PRIMARY KEY,
+  CategoryID INT,
+  ImageID INT,
+  AttributeName VARCHAR(50) NOT NULL,
+  Description VARCHAR(255)
+);
+
+INSERT INTO Attribute (CategoryID, ImageID, AttributeName, Description) VALUES
+(1, 1, 'Cable TV', 'High-definition cable TV available in all rooms'),
+(2, 2, 'Mountain View', 'Breathtaking mountain views from the balcony'),
+...
+(21, 21, 'Library', 'In-house library for guest use');
